@@ -1,5 +1,5 @@
 # Autor: Mariana Coria Rodriguez, A01374765
-# Ciclos while
+# Dividir sin dividir, restar 
 
 
 
@@ -15,18 +15,18 @@ def dividir(dividendo, divisor):
 
 def encontrarMayor():
     print ("Teclea un número para encontrar el mayor")
-    potasio2 = int(input("Teclea un número [-1 para salir]: "))
-    potasioGuardado = 0
-    if potasio2 == -1:
+    opcion2 = int(input("Teclea un número [-1 para salir]: "))
+    opcionGuardado = 0
+    if opcion2 == -1:
         print("No hay valor mayor")
     else:
-        while potasio2 != -1:
-            if potasio2 > potasioGuardado:
-                potasioGuardado = potasio2
-                potasio2 = int(input("Teclea un número [-1 para salir]: "))
+        while opcion2 != -1:
+            if opcion2 > opcionGuardado:
+                opcionGuardado = opcion2
+                opcion2 = int(input("Teclea un número [-1 para salir]: "))
             else:
-                potasio2 = int(input("Teclea un número [-1 para salir]: "))
-        print("El mayor es: ", potasioGuardado)
+                opcion2 = int(input("Teclea un número [-1 para salir]: "))
+        print("El mayor es: ", opcionGuardado)
 
 
 def main():
@@ -36,10 +36,10 @@ def main():
     print("1. Calcular divisines")
     print("2. Encontrar el mayor")
     print("3. Salir")
-    potasio = int(input("Teclea tu opción: "))
+    opcion = int(input("Teclea tu opción: "))
 
-    while potasio != 3:
-        if potasio < 1 or potasio > 3:
+    while opcion != 3:
+        if opcion < 1 or opcion > 3:
             print("ERROR")
             print("Misión 07. Ciclos While")
             print("Autor: Mariana Coria Rodríguez")
@@ -47,8 +47,8 @@ def main():
             print("1. Calcular divisines")
             print("2. Encontrar el mayor")
             print("3. Salir")
-            potasio = int(input("Teclea tu opción: "))
-        elif potasio == 1:
+            opcion = int(input("Teclea tu opción: "))
+        elif opcion == 1:
             dividendo = int(input("Teclea el dividendo: "))
             divisor = int(input("Teclea el divisor: "))
             dividir(dividendo, divisor)
@@ -58,9 +58,9 @@ def main():
             print("1. Calcular divisines")
             print("2. Encontrar el mayor")
             print("3. Salir")
-            potasio = int(input("Teclea tu opción: "))
+            opcion = int(input("Teclea tu opción: "))
 
-        elif potasio == 2:
+        elif opcion == 2:
             encontrarMayor()
             print("Misión 07. Ciclos While")
             print("Autor: Mariana Coria Rodríguez")
@@ -68,7 +68,7 @@ def main():
             print("1. Calcular divisines")
             print("2. Encontrar el mayor")
             print("3. Salir")
-            potasio = int(input("Teclea tu opción: "))
+            opcion = int(input("Teclea tu opción: "))
 
     print("Bye")
 
